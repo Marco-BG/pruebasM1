@@ -66,6 +66,12 @@ section{
     width: 70%; 
     height: 70%;
 }
+.borde_diseño img{
+    position:relative;
+    left:4%;
+    width:20%;
+    height:20%;
+}
 #tabla_elementos table, th, td {
     border: 1px solid black;
     text-align: center;
@@ -77,6 +83,7 @@ section{
     left:15%;
 }  
 .borde_diseño{
+    padding-right: 15%;
     text-align:center;
     border-style:outset;
     border-left-style:solid;

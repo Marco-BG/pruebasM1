@@ -100,6 +100,46 @@
                             <p>&lt;a href="url"&gt;<i><u>link text</i></u>&lt;&frasl;a&gt;</p>
                         </div>
                         <p>El atributo más importante del <a> elemento es el hrefatributo, que indica el destino del enlace.</br></br>El texto del enlace es la parte que será visible para el lector.</br></br>Al hacer clic en el texto del enlace, el lector se enviará a la dirección URL especificada.</p>
+                            <div class="borde_diseño">
+                                <p>&lt;a href="https://github.com/Marco-BG/pruebasM1"&gt;<i><u>Mi repositorio</i></u>&lt;&frasl;a&gt;</br></br></p>
+                                <a href="https://github.com/Marco-BG?tab=repositories">Mi repositorio</a> 
+                            </div>
+                    </div>
+            </section>
+            <section>
+                <div class="titulo_contenido">
+                    <h5><b><u>Imagenes</u></b></h5>
+                </div>
+                    <div class="parrafos_web_tutorial">
+                        <p>La &lt;img&gt; etiqueta HTML se utiliza para incrustar una imagen en una página web.</br></br>
+                            Las imágenes no se insertan técnicamente en una página web; las imágenes están vinculadas a páginas web. La &lt;img&gt; etiqueta crea un espacio de espera para la imagen de referencia.</br></br>                            
+                            La &lt;img&gt; etiqueta está vacía, solo contiene atributos y no tiene una etiqueta de cierre.</br></br>
+                            La &lt;img&gt; etiqueta tiene dos atributos obligatorios:</p>
+                            <ul>
+                                <li>src: especifica la ruta a la imagen</li>
+                                <li>alt: especifica un texto alternativo para la imagen</li>
+                            </ul>
+                    <div class="borde_diseño">
+                        <p>&lt;img src="icono_html.png" alt="Icono de HTML"&gt;</br></br></p>
+                            <img src="imagenes/icono_html.png" alt="Icono de HTML">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="titulo_contenido">
+                    <h5><b><u>Mapa de imagenes</u></b></h5>
+                </div>
+                    <div class="parrafos_web_tutorial">
+                        <p>La &lt;map&gt; etiqueta HTML define un mapa de imagen. Un mapa de imágenes es una imagen con áreas en las que se puede hacer clic. Las áreas se definen con una o más &lt;area&gt; etiquetas.</p>
+
+                        <p>La imagen se inserta mediante la etiqueta &lt;img&gt;. La única diferencia con otras imágenes es que debes agregar un usemap atributo:</br></br></p>
+                            <div class="borde_diseño">
+                                <p>&lt;img src="icono_html.png" alt="Icono de HTML"&frasl;alt&gt;</br></br></p>
+                                    <img src="imagenes/ordenador_mapa.jpg" alt="Icono de HTML" usemap="#mapa_ordenador"> 
+                                        <map name="mapa_ordenador">
+                                            <area shape="rect" coords="34,44,270,350" alt="Ordenador" href="https://es.wikipedia.org/wiki/Computadora">
+                                        </map>
+                            </div>
                     </div>
             </section>
         </main>
