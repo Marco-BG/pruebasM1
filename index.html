@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Desarrollo web</title>
+        <meta charset="utf-8"> <!--Me especifica la codificación de caracteres unicodes-Ascci-->
+        <meta name="author" content="Marco Alonso Benegas"><!--Me defino como autor de la página-->
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <section id="cabecera_intro">
+                    <nav>
+                        <a href="##">Inicio</a>
+                        <a href="##">HTML</a>
+                        <a href="##">CSS</a>
+                    </nav>
+                <div class="enlace_titulo_principal">
+                    <h1><b>TUTORIAL HTML</b></h1>
+                </div>    
+            </section>
+        </header>
+        <main>
+            <section>
+                <div class="titulo_contenido">
+                    <h2><b><u>Introducción al lenguaje HTML</b></u></h2>
+                </div>
+                <div class="parrafos_web_tutorial">    
+                    <p> HTML es un lenguaje muy sencillo que permite describir hipertexto, es decir, texto
+                        presentado de forma estructurada y agradable, con enlaces (hyperlinks) que conducen
+                        a otros documentos o fuentes de información relacionadas, y con inserciones
+                        multimedia (gráficos, sonido...). La descripción se basa en especificar en el texto la
+                        estructura lógica del contenido (títulos, párrafos de texto normal, enumeraciones,
+                        definiciones, citas, etc) así como los diferentes efectos que se quieren dar (cursiva,
+                        negrita, o un gráfico determinado).</br>
+                        </br>HTML es el lenguaje con el que se "escriben" las páginas web. Se puede resumir la
+                        filosofía del HTML con los siguientes puntos : 
+                    </p>
+                </div>    
+                    <div id="imagen_introduccion">
+                        <ul>
+                            <li>Es muy sencillo.</li>
+                            <li>No hay variables.</li>
+                            <li>No se compila</li>
+                            <li>Es un lenguaje interpretado.</li>
+                            <li>A la instrucciones se les llama etiquetas o marcas.</li>
+                            <li>Permite escribir hipertexto.</li>
+                        </ul>
+                        <img src="imagenes/imagen_html_intro.png" alt="Imagen de Introducción">
+                    </div>
+            </section>
+            <section>
+                <div class="titulo_contenido">
+                    <h3><b><u>Elementos</b></u></h3>
+                </div>
+                        <div class="parrafos_web_tutorial">
+                            <p>Un elemento HTML suele estar compuesto por dos etiquetas: la etiqueta de apertura y la etiqueta de cierre. Una etiqueta de apertura consiste en el nombre del elemento encerrado por los signos menor que "&lt;" y mayor-que "&gt;". La etiqueta de cierre se construye como la etiqueta de apertura pero, en este caso, el nombre del elemento está precedido por una barra ("&frasl;"). En el siguiente ejemplo, verá las etiquetas de apertura y cierre del belemento.</p>
+
+                            <p>El elemento HTML es todo, desde la etiqueta inicial hasta la etiqueta final.</br></br>Ejemplos de algunos elementos HTML:</br></br>&lt;<b>h1</b>&gt;Mi primer titulo&lt;&frasl;<b>h1</b>&gt;</br></br>&lt;<b>p</b>&gt;Mi primer titulo&lt;&frasl;<b>p</b>&gt;</p> 
+                            <div id="tabla_elementos">
+                                <table>
+                                    <tr>    
+                                        <th>E.inicio</th>
+                                        <th>Contenido</th>
+                                        <th>E.fin</th>
+                                    </tr>
+                                    <tr>
+                                        <td>&lt;h1&gt;</td>
+                                        <td>Mi primer título</td>
+                                        <td>&lt;&frasl;h1&gt;</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+            </section>
+            <section>
+                <div class="titulo_contenido">
+                    <h4><b><u>Texto preformateado</b></u></h4>
+                </div>
+                    <div class="parrafos_web_tutorial">
+                        <p>El &lt;pre&gt; elemento HTML define texto preformateado.</br></br>
+                            El texto dentro de un &lt;pre&gt; elemento se muestra en una fuente de ancho fijo (generalmente Courier) y conserva tanto los espacios como los saltos de línea. Por ejemplo:</br></br></p>
+                        <div id="texto_preformateado">
+                            <pre>My Bonnie lies over the ocean.
+
+                                    My Bonnie lies over the sea.
+          
+                                        My Bonnie lies over the ocean.
+             
+                                            Oh, bring back my Bonnie to me.</pre>
+                        </div>                    
+                    </div>
+            </section>
+            <section>
+                <div class="titulo_contenido">
+                    <h5><b><u>Enlaces HTML</u></b></h5>
+                </div>
+                    <div class="parrafos_web_tutorial">
+                        <p>La &lt;a&gt; etiqueta HTML define un hipervínculo. Tiene la siguiente sintaxis:</p>
+                        <div class="borde_diseño">
+                            <p>&lt;a href="url"&gt;<i><u>link text</i></u>&lt;&frasl;a&gt;</p>
+                        </div>
+                        <p>El atributo más importante del <a> elemento es el hrefatributo, que indica el destino del enlace.</br></br>El texto del enlace es la parte que será visible para el lector.</br></br>Al hacer clic en el texto del enlace, el lector se enviará a la dirección URL especificada.</p>
+                            <div class="borde_diseño">
+                                <p>&lt;a href="https://github.com/Marco-BG/pruebasM1"&gt;<i><u>Mi repositorio</i></u>&lt;&frasl;a&gt;</br></br></p>
+                                <a href="https://github.com/Marco-BG?tab=repositories">Mi repositorio</a> 
+                            </div>
+                    </div>
+            </section>
+            <section>
+                <div class="titulo_contenido">
+                    <h5><b><u>Imagenes</u></b></h5>
+                </div>
+                    <div class="parrafos_web_tutorial">
+                        <p>La &lt;img&gt; etiqueta HTML se utiliza para incrustar una imagen en una página web.</br></br>
+                            Las imágenes no se insertan técnicamente en una página web; las imágenes están vinculadas a páginas web. La &lt;img&gt; etiqueta crea un espacio de espera para la imagen de referencia.</br></br>                            
+                            La &lt;img&gt; etiqueta está vacía, solo contiene atributos y no tiene una etiqueta de cierre.</br></br>
+                            La &lt;img&gt; etiqueta tiene dos atributos obligatorios:</p>
+                            <ul>
+                                <li>src: especifica la ruta a la imagen</li>
+                                <li>alt: especifica un texto alternativo para la imagen</li>
+                            </ul>
+                    <div class="borde_diseño">
+                        <p>&lt;img src="icono_html.png" alt="Icono de HTML"&gt;</br></br></p>
+                            <img src="imagenes/icono_html.png" alt="Icono de HTML">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="titulo_contenido">
+                    <h5><b><u>Mapa de imagenes</u></b></h5>
+                </div>
+                    <div class="parrafos_web_tutorial">
+                        <p>La &lt;map&gt; etiqueta HTML define un mapa de imagen. Un mapa de imágenes es una imagen con áreas en las que se puede hacer clic. Las áreas se definen con una o más &lt;area&gt; etiquetas.</p>
+
+                        <p>La imagen se inserta mediante la etiqueta &lt;img&gt;. La única diferencia con otras imágenes es que debes agregar un usemap atributo:</br></br></p>
+                            <div class="borde_diseño">
+                                <p>&lt;img src="icono_html.png" alt="Icono de HTML"&frasl;alt&gt;</br></br></p>
+                                    <img src="imagenes/ordenador_mapa.jpg" alt="Icono de HTML" usemap="#mapa_ordenador"> 
+                                        <map name="mapa_ordenador">
+                                            <area shape="rect" coords="34,44,270,350" alt="Ordenador" href="https://es.wikipedia.org/wiki/Computadora">
+                                        </map>
+                            </div>
+                    </div>
+            </section>
+        </main>
+    </body>
+</html>
