@@ -1,10 +1,16 @@
-*{
+            /*
+            Establezco el ancho de la web y un altura generada automatica con una posición estática.
+            */
+*{              
     height:auto;
-    width: 90%;
+    width: 90%;     
     position:static;
 }
+body{ 
+    background-color:aquamarine; /*Fondo de la pagina*/
+}
 header{
-    position:relative;
+    position:relative;  /*El header tendra una posicion relative según el flujo de los elementos.*/
     left:20%;
 }
 main{
@@ -17,23 +23,47 @@ section{
 }
 nav{
     
- text-align:right;
+ text-align:right; /*Alinear el texto hacia la derecha (Enlaces de navegación).*/
 }
 nav a{
-    border:solid;
-    margin-left: 5px;
     
+    margin-left: 5px; /*Margen por cada uno de los enlaces*/
+    
+}
+#menu_navegacion_lateral{
+    position:fixed;
+    font-size: 0.8em;  
+    margin-top: 2px;    /*Posiciono el contenedor para el menú de navegación lateral de forma fija, para que no desaparezca el menú de navegación
+                            con un tamano de cada carácter de 0.8em y colocarlo en a la izaquierda con la propiedad flotante*/
+    width: 200px;
+    float: left;
+    background-color:black;
+    border:1px solid black;
+    width:19%;
+}
+#menu_navegacion_lateral ul{
+    list-style:none;
+    width: 17%;  
+             /*La propiedad list-style:none , me quita las viñetas que vienen en las listas.*/
+}
+#menu_navegacion_lateral li{
+   margin-top:7px;
+   margin-left:47%;
+   border:1px solid black;
+   border-width: 2px;
+   padding-right: 37px;
+   background-color: white ;
 }
 #cabecera_intro{
     position:relative;
-    background-image:url('imagenes/Fondo_cabecera.jpg');
-    border:solid;
+    background-image:url('imagenes/Fondo_web.jpg');/*Establezco una imagen de fondo pasando la ubicación de archivo de la web. Después aumento el padding hacia arriba con 16% para tener mas espacio entre el contenedor.*/ 
+    border:solid;                           
     padding-bottom: 16%; 
        
 }
 h1{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 200px; /*Alinear el titulo principal hacia el centro, que formará parte de la cabecera de la página y con un margen de 5px hacia arriba*/
     font-size:5rem;
 }
 .enlace_titulo_principal{
@@ -45,15 +75,19 @@ h1{
 .titulo_contenido{
     text-align:center;
     margin-left: 50px;
+    font-size:2em;
+    font-family:'Comic Sans Ms' ; /*Tipografía "Comic Sans Ms"*/
 }
 .parrafos_web_tutorial{
     margin-left: 20px;
+    font-family:'Comic Sans Ms' ;
+    text-align:justify;
 }
 pre{
     text-align:center;
 }
 section{
-    border:solid;
+    border:solid;  
 }
 #imagen_introduccion ul{
     
@@ -61,7 +95,7 @@ section{
 }
 #imagen_introduccion img{  
     display: block;
-    position:relative;
+    position:relative;  
     margin-left:20%;
     width: 70%; 
     height: 70%;
@@ -74,10 +108,14 @@ section{
 }
 #tabla_elementos table, th, td {
     border: 1px solid black;
-    text-align: center;
-    background-color: greenyellow;
+    text-align: center;             
+    background-color: greenyellow;/*Fondo de color amarillo para esta tabla*/
     margin-left: 15%;
   }
+#tabla_formularios{
+    position:relative;
+    left:10%;
+}
 .imagen_derecha{
     position: relative;
     left:15%;
@@ -85,7 +123,7 @@ section{
 .borde_diseño{
     padding-right: 15%;
     text-align:center;
-    border-style:outset;
+    border-style:outset;    /*La propiedad-style:outset me realiza un borde con grosor hacia fuera y con color verde sus lados.*/
     border-left-style:solid;
     border-right-style:solid;
     border-width: 5px;
@@ -95,5 +133,38 @@ section{
     border-left-color:blue;
     border-right-color:blue;
 }
-  
+.borde_diseño table {
+    position:relative;
+    width:90%;
+    padding:10px;
+    border-spacing:5px;/*Establezco un espacio de 5px de los bordes.*/
+    left:15%;
+}
+#table_otro_diseño th td{
+    border-collapse: colapse; /*Fusiono los bordes de la tabla.*/
+    border: 1px solid black;
+}
 
+#imagen_1{
+    width:40%;
+    height:40%;
+   
+}
+#imagen_2{
+    width:50%;
+    height:50%;
+    float:right;
+}
+footer{
+    border:1px solid black;
+    position:relative;
+    left:20%;
+    width:889px;
+    background-color: cadetblue;
+}
+footer p{
+    text-align: center;   
+}
+@media only screen and (min-device-width: 950px){
+    /* He intentado adaptarlo a responsive...*/
+  }
