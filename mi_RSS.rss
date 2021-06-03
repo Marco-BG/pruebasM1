@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<rss version="2.0">
+<channel>
+    <title>Noticias Mundo</title>
+        <description>
+            Educación, violencia, justicia y justicia
+        </description>
+        <link>https://www.elmundo.es</link>
+        <item>
+            <title>Fechas de examenes de EBAU en toda España</title>  
+            <description>Las fechas de Selectividad cambian de una comunidad autónoma a otra. En todas habrá una primera convocatoria en el mes de junio</description>
+            <link>https://www.elmundo.es/espana/2021/06/01/60b5df5d21efa0e9168bf898.html</link>
+        </item>
+        <item>
+            <title>Un menor sufre una paliza en Pontevedra tras declararse gay ante sus agresores</title>
+            <description>Un joven de 15 años ha denunciado una agresión homófoba ocurrida el pasado fin de semana en Vilagarcía de Arousa (Pontevedra) al ser agredido por un grupo de chicos tras declararse gay delante de ellos.</description>
+            <link>https://www.elmundo.es/espana/2021/06/01/60b5ff28fc6c8376438b45d8.html</link>
+        </item>
+        <item>
+            <title>El Supremo rechaza el toque de queda y el límite en las reuniones privadas de Baleares al considerar las medidas desproporcionadas</title>
+            <description>El Tribunal Supremo ha anulado este jueves el toque de queda y la limitación de reuniones en el ámbito privado impuestas por el Gobierno de Baleares tras el final del Estado de alarma.</description>
+            <link>https://www.elmundo.es/espana/2021/06/03/60b8b3fd21efa0de278b461c.html</link>
+        </item>
+</channel>
+</rss>
